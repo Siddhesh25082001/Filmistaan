@@ -1,0 +1,188 @@
+/* This is CSS File for Movie App */
+
+/* Link to the Poppins style Google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --wekit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar{
+    width: 8px;
+    height: 3px;
+    border-left: 0;
+    background: rgba(0, 0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #373b69;
+    border-radius: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+a, a:hover{
+    text-decoration: none;
+}
+
+.header{
+    background-color: #373b69;
+    display: flex;
+    justify-content: space-around;
+    padding: 24px;
+}
+
+.header h3{
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+}
+
+.header input{
+    padding: 8px 10px;
+    border: 2px solid #eee;
+    border-radius: 70px;
+    outline: none;
+    font-weight: bold;
+    overflow: hidden;
+    color: #111;
+}
+
+.header input::placeholder{
+    opacity: 0.8;
+}
+
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0px;
+    justify-content: center;
+}
+
+.nothing{
+    display: flex;
+    width: 100vw;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    flex-direction: column;
+}
+
+.nothing img{
+    width: 300px;
+    height: 300px;
+    margin: 15px 0;
+}
+
+.nothing h5{
+    margin: 15px 0;
+    opacity: 0.7;
+}
+
+.movie{
+    background-color: #373b69;
+    border-radius: 3px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    margin: 16px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+}
+
+.movie img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.movie-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #eee;
+    padding: 10px 16px;
+    letter-spacing: 1.2px;
+}
+
+.movie-info h6{
+    margin: 0;
+    font-weight: bold;
+}
+
+.movie-info span{
+    background-color: #22254b;
+    border-radius: 3px;
+    padding: 4px 8px; 
+    font-weight: bold;
+}
+
+.movie-info span.green{
+    color: rgb(39, 189, 39);   
+}
+
+.movie-info span.orange{
+    color: orange;
+}
+
+.movie-info span.red{
+    color: rgb(255, 29, 29); 
+}
+
+.overview{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    max-height: 100%;
+    overflow-y: scroll;
+    background-color: #eee;
+    color: #111;
+    padding: 32px;
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in-out;
+    text-align: justify;
+}
+
+.overview h3{
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.movie:hover .overview{
+    transform: translateY(0);
+}
+
+/* @media screen and (max-width: 768px){
+    .header{
+        flex-direction: column;
+    }
+} */
+
+
+@media screen and (max-width: 600px){
+    .header{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width: 320px){
+    .header{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
+

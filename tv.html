@@ -1,0 +1,46 @@
+<!-- This is a tutorial for learning Leaflet.js -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- This is the Head Section -->
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Title of the webpage -->
+        <title>Movie App</title>
+
+        <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+        <!-- Link to the Bootstrap framework -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+
+        <!-- Link to the 'styles.css' File -->
+        <link rel="stylesheet" href="css/styles.css">
+
+        <!-- Link to the Font-Awesome icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    </head>
+
+    <!-- This is the Body Section -->
+    <body>
+        
+        <section class="header">
+            <a href="index.html" onClick="refreshPage()"><h3>Movies</h3></a>
+            <a href="#" onClick="refreshPage()"><h3>TV Shows</h3></a>
+            <form id="form" action="">
+                <input type="search" name="search" id="search" placeholder="Search TV Shows" class="search">
+            </form>
+        </section>
+
+        <section class="main">
+        </section>
+
+    </body>
+
+    <!-- Link to the 'script.js' JS File -->
+    <script src="js/tv.js"></script>
+
+</html>
